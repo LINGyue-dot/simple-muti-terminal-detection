@@ -1,0 +1,29 @@
+{
+  "name": "simple-muti-terminal-detection-browser",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "shunze.chen <qianlonwork@outlook.com>",
+  "homepage": "https://github.com/LINGyue-dot/simple-muti-terminal-detection#readme",
+  "license": "ISC",
+  "main": "lib/browser.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LINGyue-dot/simple-muti-terminal-detection.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/browser.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/LINGyue-dot/simple-muti-terminal-detection/issues"
+  }
+}
