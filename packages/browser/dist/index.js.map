@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "",
+  "sources": [
+    "../lib/index.ts"
+  ],
+  "names": [],
+  "mappings": "AAAA,OAAO,qBAAqB,MAAM,QAAQ,CAAC;AAE3C,MAAM,CAAC,MAAM,GAAG;IACd,IAAI,qBAAqB,CAAC;QACxB,GAAG,EAAE,qBAAqB;QAC1B,QAAQ,EAAE,MAAM;QAChB,oBAAoB,EAAE,GAAG,EAAE;YACzB,OAAO,CAAC,GAAG,CAAC,+CAA+C,CAAC,CAAC;QAC/D,CAAC;KACF,CAAC,CAAC,KAAK,EAAE,CAAC;AACb,CAAC,CAAC"
+}

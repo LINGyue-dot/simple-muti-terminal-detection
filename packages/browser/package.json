@@ -1,7 +1,7 @@
 {
   "name": "simple-muti-terminal-detection-browser",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "a browser simple muti terminal detection sdk",
   "author": "shunze.chen <qianlonwork@outlook.com>",
   "homepage": "https://github.com/LINGyue-dot/simple-muti-terminal-detection#readme",
   "license": "ISC",
@@ -21,9 +21,13 @@
     "url": "git+https://github.com/LINGyue-dot/simple-muti-terminal-detection.git"
   },
   "scripts": {
-    "test": "node ./__tests__/browser.test.js"
+    "test": "node ./__tests__/browser.test.js",
+    "build": "tsc  --build tsconfig.json"
   },
   "bugs": {
     "url": "https://github.com/LINGyue-dot/simple-muti-terminal-detection/issues"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6"
   }
 }

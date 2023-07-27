@@ -2,5 +2,10 @@
 
 ## 介绍
 
-browser Websocket + nodejs ws
+功能描述：用于同一用户的多端登陆检测
+基本逻辑：前端初始化时候，连接 nodejs 的 ws ，nodejs 会用 map 记录该端的连接状态。当有第二端连接时候，nodejs 会查看 map 中是否已经存在，若存在的话会返回对应的数据并关闭该 ws 连接。
 
+其实总的想做的事情就如上，但是 websocket 的机制受浏览器、OS 等影响，不够可控，所以我们为了让他可控，做了部分事情。
+
+1. close 事件延迟触发：断开网络后，ws.send() 等行为不会立刻触发 close 事件，所以我们使用心跳检测来「手动检测 ws 连接状态」。
+2. websocket.close 不会立刻摧毁 ws 连接：websocket.close() 之后一段时间仍然在监听 close 等事件并执行对应的回调函数，所以在调用 websocket.close 之后主动清空该 websocket 的所有回调函数，以达到「摧毁」的效果。

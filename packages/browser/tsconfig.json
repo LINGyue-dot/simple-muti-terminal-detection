@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "moduleResolution": "node"
+  },
+  "include": ["lib"],
+  "exclude": ["dist"]
+}
